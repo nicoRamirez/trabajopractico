@@ -1,0 +1,21 @@
+.header{
+    background-color: #cb250e;
+    padding-bottom: 1em;
+    width: 100%;
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 8em;
+} 
+#pokebola{
+    height: 5em;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4em;
+}
