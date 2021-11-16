@@ -14,3 +14,7 @@
 .pokemon{
     display:flex;
 }
+
+body{
+    height: 100%;
+}
