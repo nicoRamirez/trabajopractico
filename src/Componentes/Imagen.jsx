@@ -7,8 +7,8 @@ const Imagen = () => {
     return ( 
         <Fragment>
         <div className="imagenes">
-            <img id="logo" src={logo}/>
-            <img id="pokebola" src={pokebola}/>
+            <img id="logo" src={logo} alt="pokemon"/>
+            <img id="pokebola" src={pokebola} alt="pokebola"/>
 
         </div>
         </Fragment>
