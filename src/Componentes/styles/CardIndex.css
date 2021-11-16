@@ -1,9 +1,16 @@
 .card{
     margin-top: 3em;
     width: 38em;
-    margin-left: 3em;
+    
 }
-
+.body{
+    display: flex;
+}
 .cardIndex{
     margin-bottom: 17px;
+    margin-left: 5m;
+}
+
+.pokemon{
+    display:flex;
 }

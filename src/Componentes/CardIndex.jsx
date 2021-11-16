@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import CardPokedex from './CardPokedex'
-import CardBayas from './CardBayas';
-import CardEvolucion from './CardEvolucion';
+import CardUbicacion from './CardUbicacion';
+
 import './styles/CardIndex.css'
 
 
@@ -12,9 +12,9 @@ const CardIndex = () => {
     return ( 
         <Fragment>
             <div className="cardIndex">
-                <CardPokedex/>
-                <CardBayas/>
-                <CardEvolucion/>   
+                <CardPokedex />
+                
+                <CardUbicacion/>  
             </div>               
         </Fragment>
         
