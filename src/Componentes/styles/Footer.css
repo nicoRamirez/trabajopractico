@@ -4,6 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
 }
 #copy{
     background-color: white;
