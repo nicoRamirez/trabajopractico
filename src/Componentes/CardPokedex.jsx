@@ -1,15 +1,13 @@
 import React, { Fragment, useState } from 'react'
 import Pokemon from './Pokemon';
-import Evolucion from './Evolucion';
+import UbicacionDePokemon from './UbicacionDePokemon';
 import './styles/CardIndex.css'
-import CardEvolucion from './CardEvolucion';
+
 const CardPokedex = () => {
 
     const[pokemon,setPokemon] = useState({});
 
-    const[datos,setDatos] = useState([{
-      nombre:" "
-    }]);
+    
 
     const consultarApi= async(nombre)=>{
       try{
@@ -54,12 +52,7 @@ const CardPokedex = () => {
     const[pokemonEvo,setPokemonEvo] = useState({});
       
 
-    const  handleInputChange =(event)=>{
-      setDatos({
-        ...datos,
-        [event.target.name] : event.target.value
-      })
-    }
+    
     const enviarDatos = (event)=>{
       event.preventDefault();
       consultarApi(datos.nombre);
@@ -69,6 +62,15 @@ const CardPokedex = () => {
       console.log(pokemonEvo);
     }
 
+    const[datos,setDatos] = useState([{
+      nombre:" "
+    }]);
+    const  handleInputChange =(event)=>{
+      setDatos({
+        ...datos,
+        [event.target.name] : event.target.value
+      })
+    }
     return ( 
         <Fragment>
           <div className="body">
@@ -90,7 +92,7 @@ const CardPokedex = () => {
        <Pokemon pokemon={pokemon} 
        pokemoncaract ={pokemoncaract}
        />
-<Evolucion pokemonEvolucion={pokemonEvo}/> 
+<UbicacionDePokemon pokemonEvolucion={pokemonEvo}/> 
        </div>
        </div>
        
